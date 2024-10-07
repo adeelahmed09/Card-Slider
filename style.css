@@ -78,6 +78,9 @@ html,body{
         border-radius: 50%;
         background-color: gray;
     }
+    #d1{
+        background-color: orangered;
+    }
     .main_section3_s2{
         display: flex;
         gap: 5vw;
