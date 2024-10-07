@@ -1,0 +1,94 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+  
+}
+:root{
+    --background:rgb(22, 22, 22);
+    --fontcolor:rgb(255, 81, 0);
+
+}
+@media (max-width : 700px) {
+    .main{
+        height: 100vh;
+        width: 100%;
+        background-color: var(--background);
+        color: var(--fontcolor);
+        padding: 2vw ;
+        position: relative;
+        overflow: hidden;
+    }
+    .main_section1{
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main_section1 h1{
+        font-size: 14vw;
+        text-decoration:dotted;
+    }
+    .main_section2{
+        transform: translateX(0%);
+        height: 50vh;
+        width: 100%;
+        display: grid;
+        padding-left: 10vw;
+        grid-template-columns: repeat(5,300px);
+        grid-template-rows: 100%;
+        gap: 10vw;   
+    }
+    
+    .card{
+        height: 100%;
+        width: 100%;
+        color: white;
+        background-color: orangered;
+        border-radius: 5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10vw;
+        font-weight:900;
+        text-transform: uppercase;
+    }
+    .main_section3{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5vw;
+        height: 20vh;
+    
+    }
+    .main_section3_s1{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .dots{
+        width: 2vw;
+        height: 2vw;
+        border-radius: 50%;
+        background-color: gray;
+    }
+    .main_section3_s2{
+        display: flex;
+        gap: 5vw;
+    }
+    .main_section3_s2 button{
+        background: var(--background);
+        border: 1px solid var(--fontcolor);
+        border-radius: 50%;
+        padding: 2vw 2.5vw;
+        color: var(--fontcolor);
+        font-size: 8vw;
+    
+    }
+}
